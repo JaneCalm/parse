@@ -1,0 +1,91 @@
+{
+  "response": {
+    "status": "SUCCESS",
+    "calls": "24"
+  },
+  "person": [
+    {
+      "id": "NY_SEX_14955",
+      "full_name": "MILLIGAN WILLIAM",
+      "dob": "12/26/1943",
+      "race": "White",
+      "sex": "Male",
+      "height": "510",
+      "weight": "175",
+      "hair": "Gray",
+      "eyes": "Blue",
+      "address": "190 DUBOIS ST PINE BUSH New York 12566",
+      "crime": "Sexual Contact Rape 1st Forcible Compulsion  Mamaroneck Village Police Department   06 8 2000 ",
+      "personal": " MILLIGAN WILLIAM PATRICK ",
+      "vehicle": "JLJ3389 New York 2016 Nissan Sentra Gray T68KRN New Jersey 2018 Kia Motor Corporation Optima ColorBlack ",
+      "sentence": "Term  10 Year s  State Prison",
+      "victim": "Female 49 Years",
+      "latitude": "41.6096080449551",
+      "longitude": "-74.2848710934709",
+      "last_update": "01/2020",
+      "state": "NY",
+      "state_name": "New York",
+      "db": "SEX"
+    },
+    {
+      "id": "ME_DOC_14538",
+      "full_name": "Milligan Daniel William",
+      "aka": "Daniel W Milligan",
+      "dob": "6/17/1987",
+      "race": "White",
+      "sex": "Male",
+      "height": "57",
+      "weight": "150",
+      "hair": "Brown",
+      "eyes": "Brown",
+      "crime": " 6 18 2018 DOMESTIC VIOLENCE ASSAULT YORK CRIMINAL DOCKET     ",
+      "personal": "Scar Abdomen Scar Forehead",
+      "last_update": "1/2020",
+      "state": "ME",
+      "state_name": "Maine",
+      "db": "DOC"
+    },
+    {
+      "id": "MO_DOC_523546",
+      "full_name": "MILLIGAN WILLIAM",
+      "dob": "12/29/1966",
+      "race": "White",
+      "sex": "Male",
+      "crime": "ASSAULT SECOND DEGREE",
+      "last_update": "3/2018",
+      "state": "MO",
+      "state_name": "Missouri",
+      "db": "DOC"
+    },
+    {
+      "id": "MO_DOC_523547",
+      "full_name": "MILLIGAN WILLIAM",
+      "dob": "12/29/1966",
+      "race": "White",
+      "sex": "Male",
+      "crime": "ASSAULT3RD",
+      "last_update": "3/2018",
+      "state": "MO",
+      "state_name": "Missouri",
+      "db": "DOC"
+    },
+    {
+      "id": "MO_DOC_523548",
+      "full_name": "MILLIGAN WILLIAM R",
+      "dob": "1/5/1955",
+      "race": "White",
+      "sex": "Male",
+      "crime": "ARSON  2ND",
+      "last_update": "3/2018",
+      "state": "MO",
+      "state_name": "Missouri",
+      "db": "DOC"
+    }
+  ],
+  "totals": {
+    "count": "5",
+    "sor_count": "1",
+    "doc_count": "4",
+    "court_count": "0"
+  }
+}
