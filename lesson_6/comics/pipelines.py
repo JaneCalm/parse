@@ -24,8 +24,11 @@ class DataBasePipeline(object):
         for i in range(len(char_names)):
             name_char = re.sub('\W','',char_names[i])
             name_char = re.sub("ь", '', name_char)
-            if name_char not in 'ISBN':
+            lang = re.search('[а-я, А-Я]+',name_char)
+            if lang:
                 name_char = transliterate.translit(name_char, reversed=True)
+            else:
+                name_char = name_char
             item[str(name_char)] = char[i]
         del item['char']
         del item['char_names']
