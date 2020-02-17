@@ -14,12 +14,15 @@ BOT_NAME = 'comics'
 SPIDER_MODULES = ['comics.spiders']
 NEWSPIDER_MODULE = 'comics.spiders'
 
+LOG_ENABLED = True
+LOG_LEVEL = 'DEBUG'
 
+IMAGES_STORE = 'images'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'comics (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,9 +67,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'comics.pipelines.ComicsPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'comics.pipelines.DataBasePipeline': 300,
+    'comics.pipelines.ComicsPipeline': 200,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
