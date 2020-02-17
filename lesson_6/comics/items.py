@@ -6,6 +6,7 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+import transliterate
 from scrapy.loader.processors import MapCompose, TakeFirst
 import re
 
@@ -28,8 +29,6 @@ def int_val(values):
     return
 
 
-
-
 class ComicsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -39,15 +38,10 @@ class ComicsItem(scrapy.Item):
     price = scrapy.Field(input_processor=MapCompose(int_val))
     char = scrapy.Field()
     char_names = scrapy.Field()
-    Kolvostranits = scrapy.Field()
-    Pereplet = scrapy.Field()
-    Izdatelstvo = scrapy.Field()
-    Personazhi = scrapy.Field()
-    ISBN = scrapy.Field()
-    Avtor = scrapy.Field()
-    Vozrast = scrapy.Field()
-    Veskg = scrapy.Field()
-    Razmer = scrapy.Field()
-    Hudozhnik = scrapy.Field()
+
+    def __setitem__(self, key, value):
+        if key not in self.fields:
+            self.fields[key] = scrapy.Field()
+        super(ComicsItem, self).__setitem__(key, value)
     pass
 
